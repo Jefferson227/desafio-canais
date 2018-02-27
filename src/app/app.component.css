@@ -1,0 +1,32 @@
+.container .header,
+.container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .header {
+    font-weight: bold;
+    background: #cecece;
+}
+
+.container .content {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.container .header .header-element,
+.container .content .content-element {
+    margin: 10px;
+}
+
+.container .content .content-element {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.container .content .content-element:nth-child(1) {
+    flex-grow: 0;
+    background: #e2e2e2;
+    margin: 0px;
+    padding: 10px;
+}
